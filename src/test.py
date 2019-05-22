@@ -1,13 +1,12 @@
 import random
 
-sabbat = random.randint(1, 7)
-print(sabbat)
+shabbat = 7
 
 lion = []
 cat = []
 
 for i in range(1, 8):
-    if i == sabbat:
+    if i == shabbat:
         continue
     rand = random.randint(1, 2)
     if (rand == 1 and len(lion) < 3) or len(cat) >= 3:
@@ -17,3 +16,4 @@ for i in range(1, 8):
 
 print("lion days:", lion)
 print("cat days:", cat)
+print("shabbat", shabbat)
